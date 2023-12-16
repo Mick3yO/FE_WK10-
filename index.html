@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Table and Form </h1>
+
+        <!-- Bootstrap Styled Form -->
+        <form id="dataForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+             <!-- Form Group for Email -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Row</button>
+        </form>
+
+        <!-- Bootstrap Styled Table -->
+        <table class="table mt-3">
+            <thead>
+                  <!-- Table Header Row -->
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Table rows will be added dynamically here -->
+            </tbody>
+        </table>
+    </div>
+      <!-- Include jQuery before Bootstrap JavaScript -->
+      <script src="node_modules/jquery/dist/jquery.min.js"></script>
+      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="index.js"></script>
+  
+</body>
+</html>
